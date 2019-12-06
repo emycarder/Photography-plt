@@ -78,44 +78,52 @@ p {
   display: inline-block;
   min-height: 35px;
   line-height: 35px;
-  background: #fff;
-  color: $primary-color;
-  border: 0;
+  background: transparent;
+
+  border: 1px solid #fff;
   border-radius: 34px;
-  margin: 3px;
+
   // outline: 1px  solid #fff; /* Пунктирная рамка */
   // outline-offset: 3px ; /* Выводим рамку внутри элемента */
 
   &:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   }
-  &:focus {
-    box-shadow: none;
+
+  &:focus > a {
+    border-color: $primary-color;
   }
 }
 
 .ba-button--large {
-  padding: 1px 1px;
+  padding: 2px;
   outline: none;
-  &:focus {
-    background-color: $primary-color;
-    color: #fff;
-  }
+
   @media screen and(max-width: $medium) {
     font-size: 14px;
     padding: 0 60px;
   }
 }
+a {
+  text-decoration: none;
+}
 
 .ba-btn-content {
-  border: 2px solid;
-
+  display: inline-block;
+  background: #fff;
+  color: $primary-color;
   display: inline-block;
   border-radius: 34px;
   padding: 0 66px;
   &:focus {
-    color: $primary-color;
+    color: #fff;
+    background-color: $primary-color;
   }
+
+  /*&:focus {
+    color: #fff;
+    background-color: $primary-color;
+  }*/
 }
 
 /*.ba-holder {
