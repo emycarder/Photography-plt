@@ -4,7 +4,7 @@
   background-size: cover;
   height: 100%;
   padding-top: 127px;
-  padding-bottom: 198px;
+  padding-bottom: 15px;
   @media screen and(max-width: $medium) {
     padding-top: 85px;
     padding-bottom: 50px;
@@ -56,6 +56,29 @@
 
 .ba-svg {
   display: flex;
+
+  justify-content: flex-end;
+}
+
+.ba-column {
+  display: flex;
   flex-direction: column;
-  position: relative;
+  a {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+a > svg {
+  fill: #fff;
+  background-color: transparent;
+
+  &:hover {
+    fill: $primary-color;
+    transition: all 0.5s ease;
+  }
+}
+
+.ba-scroll {
+  display: flex;
+  justify-content: center;
 }

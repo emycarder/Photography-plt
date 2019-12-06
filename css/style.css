@@ -612,15 +612,15 @@ h6 {
   margin: 0 0 30px;
   line-height: 1.2;
   font-weight: 500;
-  font-family: "Montserrat";
-  text-transform: uppercase; }
+  font-family: "Montserrat"; }
 
 h1 {
   font-size: 64px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.15);
   font: 900 64px/1.5 Monsterrat, sans-serif;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 48px;
@@ -628,10 +628,13 @@ h2 {
   color: #fff; }
 
 h3 {
-  font-size: 20px; }
+  font-size: 24px;
+  font-family: Yanone Kaffeesatz; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Yanone Kaffeesatz";
+  font-weight: 400; }
 
 p {
   margin: 0 0 25px;
@@ -675,7 +678,10 @@ p {
       padding: 0 60px; } }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
 
 .ba-btn-content {
   display: inline-block;
@@ -712,7 +718,7 @@ a {
   background-size: cover;
   height: 100%;
   padding-top: 127px;
-  padding-bottom: 198px; }
+  padding-bottom: 15px; }
   @media screen and (max-width: 640px) {
     .ba-section-intro {
       padding-top: 85px;
@@ -762,11 +768,38 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.ba-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative; }
+  flex-direction: column; }
+  .ba-column a {
+    display: block;
+    margin-bottom: 15px; }
+
+a > svg {
+  fill: #fff;
+  background-color: transparent; }
+  a > svg:hover {
+    fill: #1b1b1b;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+.ba-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .ba-header {
   position: absolute;
@@ -801,5 +834,69 @@ a {
       display: none; } }
   .ba-menu a {
     letter-spacing: 0.2px; }
+
+.ba-services {
+  padding: 30px 30px; }
+  .ba-services p {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 19px; }
+  .ba-services h3 {
+    margin-bottom: 110px; }
+
+.ba-titles {
+  text-align: center;
+  margin-bottom: 56px; }
+  .ba-titles p {
+    font-family: Calibri;
+    color: #bdbdbd;
+    opacity: 0.5;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: bold; }
+
+.ba-transparent {
+  margin-bottom: 5px; }
+
+.ba-card {
+  padding-left: 115px !important;
+  padding-right: 115px;
+  margin-bottom: 15px; }
+
+.ba-card-content {
+  height: 100%;
+  padding-top: 16px;
+  padding-bottom: 40px;
+  padding-right: 25px;
+  padding-left: 20px;
+  -webkit-box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.07); }
+
+.ba-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .ba-pics img {
+    line-height: 0; }
+
+.ba-img-superior {
+  margin-bottom: 25px; }
+  .ba-img-superior img + img {
+    margin-left: 30px; }
+
+.ba-img-inferior img + img {
+  margin-left: 30px; }
+
+.ba-author p {
+  font-size: 25px;
+  font-weight: 300;
+  font-family: "Yanone Kaffeesatz"; }
+
+.ba-letter {
+  font-size: 36px;
+  font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
