@@ -1,0 +1,55 @@
+.ba-section-intro {
+  background: url(../img/jonathan-borba-hdgHkndutgw-unsplash1.jpg) 50%,
+    no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding-top: 127px;
+  padding-bottom: 198px;
+  @media screen and(max-width: $medium) {
+    padding-top: 85px;
+    padding-bottom: 50px;
+  }
+  h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 185px;
+
+    @media screen and(min-width: $medium) {
+      margin-bottom: 171px;
+      font-size: 64px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-left: 25px;
+    @media screen and(min-width: $medium) {
+      margin-bottom: 0;
+      padding-left: 0;
+      font-size: 64px;
+    }
+  }
+  p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    @media screen and(max-width: $medium) {
+      font-size: 16px;
+      padding-left: 25px;
+
+      line-height: 19px;
+      margin-bottom: 62px;
+    }
+  }
+}
+
+.ba-b-white {
+  @media screen and(max-width: $medium) {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}

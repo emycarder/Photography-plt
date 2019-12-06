@@ -1,0 +1,36 @@
+.ba-header {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+
+    color: $primary-color;
+    &:hover {
+      color: rgb(124, 124, 124);
+    }
+  }
+}
+.ba-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.ba-menu {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  margin-top: 0;
+  li + li {
+    margin-left: 19px;
+  }
+  @media screen and(max-width: $medium) {
+    display: none;
+  }
+
+  a {
+    letter-spacing: 0.2px;
+  }
+}
