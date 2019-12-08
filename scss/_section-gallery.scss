@@ -1,3 +1,7 @@
+.ba-gallery {
+  padding-bottom: 30px;
+}
+
 .ba-pics {
   img {
     line-height: 0;
@@ -7,14 +11,46 @@
 }
 
 .ba-img-superior {
-  margin-bottom: 25px;
-  img + img {
-    margin-left: 30px;
+  margin-bottom: -1px;
+  .ba-img-block + .ba-img-block {
+    margin-left: 29px;
   }
 }
 
 .ba-img-inferior {
-  img + img {
-    margin-left: 30px;
+  .ba-img-block + .ba-img-block {
+    margin-left: 29px;
+  }
+}
+
+.ba-img-desc {
+  padding: 18px 8px;
+  color: beige;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 36px;
+  line-height: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  p {
+    margin: 0;
+    line-height: 0;
+  }
+}
+
+.ba-img-block {
+  display: inline-block;
+  line-height: 0;
+
+  a {
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+.ba-link {
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
   }
 }

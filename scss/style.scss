@@ -110,7 +110,7 @@ p {
 }
 a {
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .ba-btn-content {
@@ -120,6 +120,7 @@ a {
   display: inline-block;
   border-radius: 34px;
   padding: 0 66px;
+  transition: background 0.2s;
   &:focus {
     color: #fff;
     background-color: $primary-color;
@@ -129,6 +130,18 @@ a {
     color: #fff;
     background-color: $primary-color;
   }*/
+  &:active {
+  }
+}
+.ba-button {
+  &:focus {
+    border-color: #000;
+    color: #fff;
+    & > span {
+      background-color: #000;
+      color: #fff;
+    }
+  }
 }
 
 /*.ba-holder {

@@ -2,7 +2,11 @@
   position: absolute;
   padding: 20px;
   width: 100%;
-
+  img {
+    &:hover {
+      background: #fff;
+    }
+  }
   a {
     text-decoration: none;
 
