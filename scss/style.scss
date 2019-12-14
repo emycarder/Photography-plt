@@ -1,6 +1,7 @@
 $primary-color: #1b1b1b;
 $medium: 640px;
 $large: 1024px;
+$dark-btn-press: #4f4f4f;
 @import "normalize";
 @import "layout";
 @import "elements";
@@ -97,3 +98,4 @@ p {
 @import "section-gallery";
 @import "section-about-us";
 @import "footer";
+@import "prices-main";

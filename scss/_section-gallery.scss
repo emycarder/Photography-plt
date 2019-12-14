@@ -1,5 +1,9 @@
 .ba-gallery {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  .ba-button {
+    position: relative;
+    left: 91%;
+  }
   img {
     &:hover {
       color: rgba(0, 0, 0, 0.4);

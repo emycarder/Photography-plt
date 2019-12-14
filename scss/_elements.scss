@@ -41,9 +41,12 @@ textarea {
   display: inline-block;
   min-height: 35px;
   line-height: 35px;
-
+  background: transparent;
   border-radius: 34px;
-
+  outline: none;
+  &:hover,
+  &:focus {
+  }
   // outline: 1px  solid #fff; /* Пунктирная рамка */
   // outline-offset: 3px ; /* Выводим рамку внутри элемента */
 }
@@ -54,13 +57,17 @@ textarea {
   padding: 2px;
   &:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
   }
   &:focus {
     border-color: #000;
     color: #fff;
+    transition: all 0.3s ease;
+
     & > span {
       background-color: #000;
       color: #fff;
+      transition: all 0.3s ease;
     }
   }
   .ba-btn-content {
@@ -74,6 +81,7 @@ textarea {
     &:focus {
       color: #fff;
       background-color: $primary-color;
+      transition: all 0.3s ease;
     }
   }
 
@@ -98,6 +106,34 @@ textarea {
 }
 
 .ba-button--dark {
+  border: 1px solid $primary-color;
+  border-radius: 34px;
+  padding: 2px;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    border-color: $dark-btn-press;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    & > span {
+      background-color: $dark-btn-press;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+  }
+  .ba-btn-content {
+    display: inline-block;
+    background: $primary-color;
+    color: white;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 0 19px;
+    transition: background 0.3s;
+  }
 }
 
 .ba-button--hollow {

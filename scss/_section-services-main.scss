@@ -1,7 +1,13 @@
 .ba-services {
   background: url(../img/linesandbuttons.jpg) no-repeat;
   background-position-x: 49%;
-  padding: 95px 30px;
+  padding: 75px 30px;
+  .ba-button {
+    margin-top: 32px;
+
+    position: relative;
+    left: 91%;
+  }
   p {
     font-size: 16px;
     margin-bottom: 0;

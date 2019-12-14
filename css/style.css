@@ -608,7 +608,9 @@ select {
   display: inline-block;
   min-height: 35px;
   line-height: 35px;
-  border-radius: 34px; }
+  background: transparent;
+  border-radius: 34px;
+  outline: none; }
 
 .ba-button--light {
   border: 1px solid #fff;
@@ -620,13 +622,22 @@ select {
   }*/ }
   .ba-button--light:hover {
     -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
   .ba-button--light:focus {
     border-color: #000;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
     .ba-button--light:focus > span {
       background-color: #000;
-      color: #fff; }
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .ba-button--light .ba-btn-content {
     display: inline-block;
     background: #fff;
@@ -639,7 +650,10 @@ select {
     transition: background 0.3s; }
     .ba-button--light .ba-btn-content:focus {
       color: #fff;
-      background-color: #1b1b1b; }
+      background-color: #1b1b1b;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
   .ba-button--light a {
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
@@ -651,6 +665,39 @@ select {
   border-radius: 34px;
   border: none;
   padding: 0 15px; }
+
+.ba-button--dark {
+  border: 1px solid #1b1b1b;
+  border-radius: 34px;
+  padding: 2px; }
+  .ba-button--dark:hover {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .ba-button--dark:focus {
+    border-color: #4f4f4f;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .ba-button--dark:focus > span {
+      background-color: #4f4f4f;
+      color: #fff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+  .ba-button--dark .ba-btn-content {
+    display: inline-block;
+    background: #1b1b1b;
+    color: white;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 0 19px;
+    -webkit-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s; }
 
 .ba-button--large {
   outline: none; }
@@ -796,9 +843,9 @@ p {
     background-color: transparent; }
     .ba-svg a > svg:hover {
       fill: #1b1b1b;
-      -webkit-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 
 .ba-column {
   display: -webkit-box;
@@ -864,7 +911,7 @@ a {
   list-style: none;
   font-size: 18px;
   margin-top: 0; }
-  .ba-menu a:active::after {
+  .ba-menu a:focus::after {
     content: "";
     height: 4px;
     margin: 0 auto;
@@ -880,10 +927,17 @@ a {
   .ba-menu a {
     letter-spacing: 0.2px; }
 
+.ba-logo svg {
+  fill: none; }
+
 .ba-services {
   background: url(../img/linesandbuttons.jpg) no-repeat;
   background-position-x: 49%;
-  padding: 95px 30px; }
+  padding: 75px 30px; }
+  .ba-services .ba-button {
+    margin-top: 32px;
+    position: relative;
+    left: 91%; }
   .ba-services p {
     font-size: 16px;
     margin-bottom: 0;
@@ -924,7 +978,10 @@ a {
   box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.07); }
 
 .ba-gallery {
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
+  .ba-gallery .ba-button {
+    position: relative;
+    left: 91%; }
   .ba-gallery img:hover {
     color: rgba(0, 0, 0, 0.4); }
 
@@ -971,7 +1028,8 @@ a {
     color: rgba(0, 0, 0, 0.4); }
 
 .ba-about {
-  padding: 90px 0; }
+  padding-top: 0;
+  padding-bottom: 100px; }
 
 .ba-author p {
   font-size: 22px;
@@ -1064,5 +1122,8 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
+
+.ba-section-intro .sec-margin {
+  color: red; }
 
 /*# sourceMappingURL=style.css.map */

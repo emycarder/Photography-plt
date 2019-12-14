@@ -32,7 +32,7 @@ a {
   font-size: 18px;
   margin-top: 0;
   a {
-    &:active {
+    &:focus {
       &::after {
         content: "";
         height: 4px;
@@ -53,5 +53,11 @@ a {
 
   a {
     letter-spacing: 0.2px;
+  }
+}
+
+.ba-logo {
+  svg {
+    fill: none;
   }
 }
