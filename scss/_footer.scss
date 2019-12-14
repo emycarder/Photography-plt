@@ -1,0 +1,75 @@
+.ba-footer {
+  padding: 100px 0;
+  background: url(../img/foto-pettine-IfjHaIoAoqE-unsplash.jpg);
+
+  background-size: cover;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  p {
+    font-size: 24px;
+    color: white;
+  }
+}
+
+.ba-svg--footer {
+  display: flex;
+
+  justify-content: flex-start;
+}
+
+.ba-column--footer {
+  display: flex;
+  flex-direction: row;
+  a + a {
+    margin-left: 10px;
+  }
+  a {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.ba-email {
+  max-width: 324px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 34px;
+  &__input {
+    flex-grow: 1;
+  }
+
+  &:active {
+    outline: none;
+    border-style: none;
+
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+  }
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+  }
+}
+.ba-form-box {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.ba-footer-flex {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.ba-info-block {
+  display: flex;
+  svg {
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+.ba-flex-con {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}

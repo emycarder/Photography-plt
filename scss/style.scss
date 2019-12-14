@@ -76,74 +76,6 @@ p {
   padding-right: 20px;
 }
 
-.ba-button {
-  font: 300 16px Yanone Kaffeesatz, sans-serif;
-
-  display: inline-block;
-  min-height: 35px;
-  line-height: 35px;
-  background: transparent;
-
-  border: 1px solid #fff;
-  border-radius: 34px;
-
-  // outline: 1px  solid #fff; /* Пунктирная рамка */
-  // outline-offset: 3px ; /* Выводим рамку внутри элемента */
-
-  &:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  }
-
-  &:focus > a {
-    border-color: $primary-color;
-  }
-}
-
-.ba-button--large {
-  padding: 2px;
-  outline: none;
-
-  @media screen and(max-width: $medium) {
-    font-size: 14px;
-    padding: 0 60px;
-  }
-}
-a {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.ba-btn-content {
-  display: inline-block;
-  background: #fff;
-  color: $primary-color;
-  display: inline-block;
-  border-radius: 34px;
-  padding: 0 66px;
-  transition: background 0.2s;
-  &:focus {
-    color: #fff;
-    background-color: $primary-color;
-  }
-
-  /*&:focus {
-    color: #fff;
-    background-color: $primary-color;
-  }*/
-  &:active {
-  }
-}
-.ba-button {
-  &:focus {
-    border-color: #000;
-    color: #fff;
-    & > span {
-      background-color: #000;
-      color: #fff;
-    }
-  }
-}
-
 /*.ba-holder {
   border: 1px solid #fff;
   display: inline-block;
@@ -164,3 +96,4 @@ a {
 @import "section-services-main";
 @import "section-gallery";
 @import "section-about-us";
+@import "footer";

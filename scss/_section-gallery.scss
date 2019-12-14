@@ -1,10 +1,16 @@
 .ba-gallery {
   padding-bottom: 30px;
+  img {
+    &:hover {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
 }
 
 .ba-pics {
   img {
     line-height: 0;
+    max-width: 100%;
   }
   display: flex;
   justify-content: space-between;
@@ -41,16 +47,9 @@
 .ba-img-block {
   display: inline-block;
   line-height: 0;
-
-  a {
+  img {
     &:hover {
-      background: rgba(0, 0, 0, 0.4);
+      color: rgba(0, 0, 0, 0.4);
     }
-  }
-}
-
-.ba-link {
-  &:hover {
-    background: rgba(0, 0, 0, 0.4);
   }
 }

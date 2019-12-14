@@ -2,20 +2,24 @@
   position: absolute;
   padding: 20px;
   width: 100%;
-  img {
-    &:hover {
-      background: #fff;
-    }
-  }
-  a {
-    text-decoration: none;
+  svg {
+    fill: #fff;
 
-    color: $primary-color;
     &:hover {
-      color: rgb(124, 124, 124);
+      fill: $primary-color;
+      transition: all 0.5s ease;
     }
   }
 }
+a {
+  text-decoration: none;
+
+  color: $primary-color;
+  &:hover {
+    color: rgb(124, 124, 124);
+  }
+}
+
 .ba-nav {
   display: flex;
   justify-content: space-between;
@@ -27,6 +31,19 @@
   list-style: none;
   font-size: 18px;
   margin-top: 0;
+  a {
+    &:active {
+      &::after {
+        content: "";
+        height: 4px;
+        margin: 0 auto;
+        width: 4px;
+        display: block;
+        border-radius: 50px;
+        background-color: $primary-color;
+      }
+    }
+  }
   li + li {
     margin-left: 19px;
   }

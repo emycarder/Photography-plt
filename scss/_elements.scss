@@ -1,20 +1,20 @@
-
 /* Typography */
 a,
 input[type="submit"],
 input[type="button"],
-button{
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
 }
 input[type="submit"],
 input[type="button"],
 button,
-.ba-button{
-	display: inline-block;
-	&:hover{
-
-	}
+.ba-button {
+  display: inline-block;
+  &:hover {
+  }
 }
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -22,12 +22,92 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	&:focus{
-		
-	}
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+  background: transparent;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 20px;
+
+  border-style: none;
 }
 
 textarea {
+}
 
+.ba-button {
+  font: 300 16px Yanone Kaffeesatz, sans-serif;
+  display: none;
+  display: inline-block;
+  min-height: 35px;
+  line-height: 35px;
+
+  border-radius: 34px;
+
+  // outline: 1px  solid #fff; /* Пунктирная рамка */
+  // outline-offset: 3px ; /* Выводим рамку внутри элемента */
+}
+
+.ba-button--light {
+  border: 1px solid #fff;
+  border-radius: 34px;
+  padding: 2px;
+  &:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  &:focus {
+    border-color: #000;
+    color: #fff;
+    & > span {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+  .ba-btn-content {
+    display: inline-block;
+    background: #fff;
+    color: $primary-color;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 0 66px;
+    transition: background 0.3s;
+    &:focus {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  /*&:focus {
+    color: #fff;
+    background-color: $primary-color;
+  }*/
+  &:active {
+  }
+}
+
+.ba-button--frm {
+  background-color: #fff;
+  border-radius: 34px;
+  border: none;
+  padding: 0 15px;
+}
+
+.ba-button--dark {
+}
+
+.ba-button--hollow {
+}
+
+.ba-button--large {
+  outline: none;
+
+  @media screen and(max-width: $medium) {
+    font-size: 14px;
+    padding: 0 60px;
+  }
 }
