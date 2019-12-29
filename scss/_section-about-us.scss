@@ -17,3 +17,14 @@
   font-weight: normal;
   line-height: 0;
 }
+.ba-row-rev {
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  img {
+    @media (max-width: 640px) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.ba-img-desc-g {
+  height: 100%;
+  position: relative;
+  bottom: 112px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px 25px;
+  display: inline-block;
+  .ba-no-p-marg {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+}
+
+.ba-gallery-sec {
+  background: url(../img/groom-kissing-bride-neck-14883121.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.ba-gallery-th {
+  background: url(../img/img.gallery/man-in-gray-dress-suit-jacket-embraces-woman-wearing-wedding-9317961.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.ba-rel {
+  position: relative;
+  display: block;
+}
+
+.ba-img-flex-g {
+  column-count: 2;
+
+  column-fill: balance;
+
+  img {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.ba-m {
+  img {
+    max-width: unset;
+  }
+}
+
+.ba-mg {
+}
+
+.ba-bcg {
+  height: 100px;
+}

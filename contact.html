@@ -10,7 +10,6 @@
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-
   <body>
     <header class="ba-header">
       <div class="ba-container-header">
@@ -35,39 +34,18 @@
             </svg>
           </a>
           <ul class="ba-menu">
-            <li><a href="index.html" class="ba-a-active">Головна</a></li>
+            <li><a href="index.html">Головна</a></li>
             <li><a href="prices.html">Ціни</a></li>
             <li><a href="galley.html">Галерея</a></li>
-            <li><a href="contact.html">Контакти</a></li>
+            <li><a href="contact.html" class="ba-c-active">Контакти</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="ba-sector-main">
-        <div class="ba-section-intro" id="intro">
-           <h1 class="ba-title-first">roman Kucher Photography</h1>
-          <div class="ba-container">
-            <h2>rK Photography</h2>
-            <p>
-              Фотографія - це мистецтво, застосування <br />
-              та зміцнення спогадів...
-            </p>
-
-            <!-- <div class="ba-b-white" >
-            <div class="ba-holder">
-              <button class="ba-button ba-button--large">
-                Watch preview
-              </button>
-            </div>
-          </div> -->
-
-            <div class="ba-bth-flex">
-              <button class="ba-button ba-button--light ba-button--large">
-                <span class="ba-btn-content">Watch preview</span>
-              </button>
-            </div>
-          </div>
+        <section class="ba-section-intro ba-section-intro-prices" id="intro">
+          <div class="ba-container"></div>
           <div class="ba-container-header">
             <div class="ba-svg">
               <div class="ba-column">
@@ -134,8 +112,9 @@
                 </a>
               </div>
             </div>
+            <h1 class="ba-title-second">roman Kucher Photography</h1>
             <div class="ba-scroll-flex">
-              <a href="#services" class="ba-scroll">
+              <a href="#prices-p" class="ba-scroll">
                 <svg
                   width="14"
                   height="26"
@@ -160,249 +139,92 @@
               </a>
             </div>
           </div>
+        </section>
+
+        <div class="ba-titles">
+          <p class="ba-transparent">Наші контакти</p>
+          <h3>
+            Для отримання більшої інформації про наші послуги
+          </h3>
+        </div>
+
+        <div class="ba-container">
+          <section class="ba-section-contact">
+            <div class="ba-frame">
+              <div class="ba-flex">
+                <p class="ba-16px ba-p-marg">
+                  Якщо Ви хочете отримати більше інформації про наші послуги або
+                  перевірити наявність вільних дат, будь-ласка, заповніть форму
+                  нижче чи зателефонуйте до нас. <br />
+                  <br />
+                  Для зручності спілкування коли ми за кордоном, рекомендуємо
+                  телефонувати / писати до нас використовуючи зручний для Вас
+                  інтернет-месенджер <br />
+                  <br />
+                  Phone: +38 0676766881 Viber|Whatsapp|Telegram <br />
+                  Email: rkphotography@gmail.com<br />
+                  <br />
+                  Ми працюємо в Україні та Європі Адреса: Полтава вул.Небесної
+                  Сотні 32
+                </p>
+                <a href="index.html" class="ba-logo">
+                  <svg
+                    width="96"
+                    height="96"
+                    viewBox="0 0 46 46"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M39.9999 38L39.4999 38.5L25.4719 21.32L20.6239 25.928L20.6719 45L19.7119 45.1655V0.303999H20.6719V23.48L20.6239 24.824L38.9119 7.304L39.4999 8L26.1919 20.696L39.9999 38Z"
+                      fill="#1A1A1A"
+                    />
+                    <path
+                      d="M31.4999 44L23.4559 30.4C22.3679 30.656 21.2159 30.784 19.9999 30.784H14.6719V44H13.7119V12.304H20.6239C22.0639 12.304 23.5359 12.624 25.0399 13.264C26.5759 13.872 27.8559 14.848 28.8799 16.192C29.9039 17.536 30.4159 19.232 30.4159 21.28C30.4159 23.296 29.9199 25.12 28.9279 26.752C27.9679 28.352 26.4639 29.488 24.4159 30.16L32.4999 43.5L31.4999 44ZM19.8559 29.872C23.3119 29.872 25.7759 29.04 27.2479 27.376C28.7199 25.712 29.4559 23.696 29.4559 21.328C29.4559 19.76 29.0559 18.368 28.2559 17.152C27.4879 15.904 26.4319 14.944 25.0879 14.272C23.7439 13.568 22.2719 13.216 20.6719 13.216H14.6719V29.872H19.8559Z"
+                      fill="#1A1A1A"
+                    />
+                    <circle cx="23" cy="23" r="22.5" stroke="black" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <div class="ba-f-center">
+            <div class="ba-padd">
+                <form action="#" class="ba-contact-contact ba-flex-cont">
+                  <input
+                    class="ba-input-contact"
+                    type="text"
+                    name="name"
+                    placeholder="Ваше ім’я"
+                  />
+                  <input
+                    class="ba-input-email"
+                    type="email"
+                    name="email"
+                    placeholder="e-mail/телефон"
+                    class="ba-email__input"
+                  />
+                  <textarea
+                    class="ba-input-textarea"
+                    name="massage"
+                    cols="30"
+                    rows="2"
+                    placeholder="Повідомлення"
+                  ></textarea>
+                  <div class="ba-f-none">
+                      <button class="ba-button ba-button--dark ba-bullet">
+                <span class="ba-btn-content">Дізнатися wsy</span>
+              </button>
+                  </div>
+                </form>
+                 
+            </div>
+          </div>
         </div>
       </div>
-      <section class="ba-services" id="services">
-        <div class="ba-containerr">
-          <div class="ba-titles">
-            <p class="ba-transparent">Послуги</p>
-            <h3>
-              RK Photography надає послуги
-            </h3>
-          </div>
-          <div class="ba-row .ba-card-flex">
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Весільна фотосесія</h4>
-                <p>
-                  Ми намагаємося вловити найкращі моменти, щоб зберегти ваші
-                  емоції на знімках, щоб ви могли переживати такий важливий день
-                  щоразу, коли дивитесь фотографії та відео.
-                </p>
-              </div>
-            </div>
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Модельна фотосесія</h4>
-                <p>
-                  Постановочна зйомка для моделей а також для тих хто хоче себе
-                  такими відчути. Створювані образи надають впевненості в собі,
-                  і на фото виглядають просто чарівно!
-                </p>
-              </div>
-            </div>
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Дитяча фотосесія</h4>
-                <p>
-                  Прекрасна можливість залишити в пам'яті кращі моменти
-                  дорослішання вашого малюка!
-                </p>
-              </div>
-            </div>
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Відеозйомка</h4>
-                <p>
-                  Наш відеооператор зафіксує все найважливіше, що сталося з вами
-                  в день весілля, красуня наречена, сором'язливі посмішки,
-                  клятви про любов і вірність.
-                </p>
-              </div>
-            </div>
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Фотосесія урочистостей</h4>
-                <p>
-                  Яскраві і теплі образи в кожному кадрі. Ми вміємо зберегти
-                  найкращі хвилини вашого життя!
-                </p>
-              </div>
-            </div>
-            <div class="ba-col-small-12 ba-col-large-6 ba-card">
-              <div class="ba-card-content">
-                <h4>Фото для бізнесу</h4>
-                <p>
-                  Якісні фото для вашого бізнесу. Виготовлення контенту для
-                  створення меню, флаєрів та постерів.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button class="ba-button ba-button--dark">
-            <span class="ba-btn-content">Дізнатися wsy</span>
-          </button>
-        </div>
-      </section>
-      <!-- /.ba-services -->
-
-      <section class="ba-gallery">
-        <div class="ba-titles">
-          <p class="ba-transparent">Галерея</p>
-          <h3>
-            Фотогалерея наших робіт
-          </h3>
-        </div>
-        <div class="ba-container ba-test">
-          <div class="ba-row ba-pics">
-            <div class="ba-col-large-8 ba-col-small-12">
-              <div class="ba-img-superior">
-                <div class="ba-img-block ba-img-block--mg">
-                  <img
-                    src="img/r_w_kucher_42590673_1792009387583114_5222487175682381601_n 1.jpg"
-                    alt="girl"
-                  />
-                  <div class="ba-img-desc">
-                    <p>Maria’s & Vitalii wedding story</p>
-                    <p>25 серп 2019</p>
-                  </div>
-                </div>
-
-                <div class="ba-img-block ba-img-block--mg">
-                  <img
-                    src="img/r_w_kucher_70135310_399013677474413_8458176072213984569_n 1.jpg"
-                    alt="boy"
-                  />
-                  <div class="ba-img-desc">
-                    <p>Maria’s & Vitalii wedding story</p>
-                    <p>25 серп 2019</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="ba-img-inferior">
-                <div class="ba-img-block ba-img-block--mg">
-                  <a class="ba-link" href="#"
-                    ><img
-                      src="img/r_w_kucher_73159541_529920997826248_452447400797082552_n 1.jpg"
-                      alt="ejjeje"
-                    />
-                    <div class="ba-img-desc">
-                      <p>Maria’s & Vitalii wedding story</p>
-                      <p>25 серп 2019</p>
-                    </div></a
-                  >
-                </div>
-
-                <div class="ba-img-block ba-img-block--mg">
-                  <img
-                    src="img/r_w_kucher_42607295_1931583480484677_2232551952534943757_n 1.jpg"
-                    alt="fvr"
-                  />
-                  <div class="ba-img-desc">
-                    <p>Maria’s & Vitalii wedding story</p>
-                    <p>25 серп 2019</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="ba-col-large-4 ">
-              <div class="ba-img-block ba-img-block--freak">
-                <img
-                  class="ba-freak"
-                  src="img/r_w_kucher_53530465_325433698318884_8132588024853868866_n 1.jpg"
-                  alt="rfrf"
-                />
-                <div class="ba-img-desc">
-                  <p>Maria’s & Vitalii wedding story</p>
-                  <p>25 серп 2019</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          
-<div class="ba-pics-media">
- <div class="ba-containerr">
-   <div class="ba-img-block ba-img-block--mg">
-                    <img
-                      src="img/r_w_kucher_73159541_529920997826248_452447400797082552_n 1.jpg"
-                      alt="girl"
-                    />
-                    <div class="ba-img-desc">
-                      <p>Maria’s & Vitalii wedding story</p>
-                      <p>25 серп 2019</p>
-                    </div>
-                  </div>
- </div>
- <div class="ba-containerr">
-   <div class="ba-img-block ba-img-block--mg">
-                    <img
-                      src="img/r_w_kucher_42590673_1792009387583114_5222487175682381601_n 1.jpg"
-                      alt="girl"
-                    />
-                    <div class="ba-img-desc">
-                      <p>Maria’s & Vitalii wedding story</p>
-                      <p>25 серп 2019</p>
-                    </div>
-                  </div>
- </div>
- <div class="ba-containerr">
-   <div class="ba-img-block ba-img-block--mg">
-                    <img
-                      src="img/r_w_kucher_70135310_399013677474413_8458176072213984569_n 1.jpg"
-                      alt="girl"
-                    />
-                    <div class="ba-img-desc">
-                      <p>Maria’s & Vitalii wedding story</p>
-                      <p>25 серп 2019</p>
-                    </div>
-                  </div>
- </div>
-
-</div>
-
-
-
-        <button class="ba-button ba-button--dark">
-              <span class="ba-btn-content">Уся галерея</span>
-            </button>
-        </div>
-      </section>
-      <!-- /.ba-gallery -->
-      <section class="ba-about">
-        <div class="ba-titles">
-          <p class="ba-transparent">Про нас</p>
-          <h3>
-            Інформація про фотографа
-          </h3>
-        </div>
-        <div class="ba-container">
-          <div class="ba-row ba-row-rev">
-            <div class="ba-col-large-8 ba-col-small-12 ba-author">
-              <p>
-                <span class="ba-letter">М</span>ене звати Роман Кучер, я
-                фотограф і займаюся весільною та сімейною фотозйомкою. Як
-                професійний фотограф, я знаю як важливо відобразити найяскравіші
-                моменти вашого життя - закоханість, день весілля, вінчання,
-                народження або ювілей спільного життя. <br />
-                <br />
-
-                Я завжди намагаюся знайти щось нове і незвичайне в постановці,
-                кольорі та емоціях фотографії, приділивши особливу увагу
-                деталям, які іноді не помітні погляду, але так важливі. Мій
-                стиль роботи у весільній фотографії - креативний репортаж.
-                <br />
-                <br />
-                Намагаюся уникати будь-якої натягнутості і неприродності в
-                кадрі. У день весілля Ви повинні відчувати себе комфортно і
-                невимушено, а найкраще для весільного фотографа - ваші посмішки,
-                радість, сльози щастя і справжні емоції. Найголовніше для мене -
-                живі емоції людей, котрих я фотографую. Посмішки і любов в
-                кожному кадрі. <br />
-                <br />
-              </p>
-            </div>
-            <div class="ba-col-large-4 ba-col-small-12">
-              <img src="img/photographer icon.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.ba-about -->
+    </main>
       <footer class="ba-footer">
         <div class="ba-container">
           <div class="ba-footer-flex"><div class="ba-box-flex">
@@ -410,7 +232,7 @@
           <p>
           Отримуй новини від нас
           </p>
-          <form action="#" method="POST" class="ba-email ">
+          <form action="#" method="POST" class="ba-email">
           <input
           type="email"
           name="email"
@@ -490,7 +312,7 @@
           <!-- /.ba-form-box -->
           <div class="ba-box-flex">
           <div class="ba-flex-con">
-          <div class="ba-logo ba-logo--footer">
+          <div class="ba-logo">
           <svg
           width="46"
           height="46"
@@ -651,44 +473,97 @@
           </svg>
           </div>
           <div class="ba-svg-info">
-    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" class="ba-svg-no-border">
-<g filter="url(#filter0_d)">
-<path d="M18.9944 0C10.7271 0 4 6.72527 4 14.9935C4 23.2616 10.7271 29.9869 18.9944 29.9869C27.2616 29.9869 33.9888 23.2616 33.9888 14.9935C33.9888 6.72527 27.2616 0 18.9944 0ZM18.9944 28.9882C11.2779 28.9882 5.00056 22.7099 5.00056 14.9935C5.00056 7.27698 11.2779 0.998691 18.9944 0.998691C26.7109 0.998691 32.9882 7.27698 32.9882 14.9935C32.9882 22.7099 26.7109 28.9882 18.9944 28.9882Z" fill="white"/>
-<path d="M18.9944 0C10.7271 0 4 6.72527 4 14.9935C4 23.2616 10.7271 29.9869 18.9944 29.9869C27.2616 29.9869 33.9888 23.2616 33.9888 14.9935C33.9888 6.72527 27.2616 0 18.9944 0ZM18.9944 28.9882C11.2779 28.9882 5.00056 22.7099 5.00056 14.9935C5.00056 7.27698 11.2779 0.998691 18.9944 0.998691C26.7109 0.998691 32.9882 7.27698 32.9882 14.9935C32.9882 22.7099 26.7109 28.9882 18.9944 28.9882Z" fill="url(#paint0_linear)"/>
-<path d="M4.5 14.9935C4.5 12.8451 4.96992 10.8045 5.81234 8.9689C4.97025 10.8045 4.50056 12.8452 4.50056 14.9935C4.50056 17.1418 4.97025 19.1824 5.81234 21.018C4.96992 19.1824 4.5 17.1418 4.5 14.9935ZM33.4882 14.9935C33.4882 12.8452 33.0185 10.8045 32.1764 8.9689C33.0189 10.8045 33.4888 12.8451 33.4888 14.9935C33.4888 17.1418 33.0189 19.1824 32.1764 21.018C33.0185 19.1824 33.4882 17.1418 33.4882 14.9935Z" stroke="white"/>
-<path d="M4.5 14.9935C4.5 12.8451 4.96992 10.8045 5.81234 8.9689C4.97025 10.8045 4.50056 12.8452 4.50056 14.9935C4.50056 17.1418 4.97025 19.1824 5.81234 21.018C4.96992 19.1824 4.5 17.1418 4.5 14.9935ZM33.4882 14.9935C33.4882 12.8452 33.0185 10.8045 32.1764 8.9689C33.0189 10.8045 33.4888 12.8451 33.4888 14.9935C33.4888 17.1418 33.0189 19.1824 32.1764 21.018C33.0185 19.1824 33.4882 17.1418 33.4882 14.9935Z" stroke="url(#paint1_linear)"/>
-</g>
-<path d="M25.1635 8.07432L11.3135 13.5743C10.8635 13.7243 10.9135 14.3743 11.3635 14.5243L14.8635 15.6243L16.2635 20.0243C16.3635 20.3743 16.8135 20.4743 17.0635 20.2243L19.1135 18.3243L23.0135 21.1743C23.3135 21.3743 23.7135 21.2243 23.8135 20.8743L26.5135 9.27432C26.6635 8.42432 25.9135 7.77432 25.1635 8.07432ZM17.0635 16.4743L16.6135 19.0743L15.6135 15.4743L25.3635 9.07432L17.0635 16.4743Z" fill="white"/>
-<path d="M25.1635 8.07432L11.3135 13.5743C10.8635 13.7243 10.9135 14.3743 11.3635 14.5243L14.8635 15.6243L16.2635 20.0243C16.3635 20.3743 16.8135 20.4743 17.0635 20.2243L19.1135 18.3243L23.0135 21.1743C23.3135 21.3743 23.7135 21.2243 23.8135 20.8743L26.5135 9.27432C26.6635 8.42432 25.9135 7.77432 25.1635 8.07432ZM17.0635 16.4743L16.6135 19.0743L15.6135 15.4743L25.3635 9.07432L17.0635 16.4743Z" fill="url(#paint2_linear)"/>
-<defs>
-<filter id="filter0_d" x="0" y="0" width="37.9888" height="37.9869" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear" x1="18.9944" y1="0" x2="18.9944" y2="29.9869" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="18.9944" y1="0" x2="18.9944" y2="29.9869" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-<linearGradient id="paint2_linear" x1="18.7664" y1="8" x2="18.7664" y2="21.2639" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-</defs>
-</svg>
-
+          <svg
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+          <path
+          d="M0.5 14.9935C0.5 12.8451 0.969917 10.8045 1.81234 8.9689C0.970246 10.8045 0.500561 12.8452 0.500561 14.9935C0.500561 17.1418 0.970246 19.1824 1.81234 21.018C0.969917 19.1824 0.5 17.1418 0.5 14.9935ZM29.4882 14.9935C29.4882 12.8452 29.0185 10.8045 28.1764 8.9689C29.0189 10.8045 29.4888 12.8451 29.4888 14.9935C29.4888 17.1418 29.0189 19.1824 28.1764 21.018C29.0185 19.1824 29.4882 17.1418 29.4882 14.9935Z"
+          fill="white"
+          />
+          <path
+          d="M0.5 14.9935C0.5 12.8451 0.969917 10.8045 1.81234 8.9689C0.970246 10.8045 0.500561 12.8452 0.500561 14.9935C0.500561 17.1418 0.970246 19.1824 1.81234 21.018C0.969917 19.1824 0.5 17.1418 0.5 14.9935ZM29.4882 14.9935C29.4882 12.8452 29.0185 10.8045 28.1764 8.9689C29.0189 10.8045 29.4888 12.8451 29.4888 14.9935C29.4888 17.1418 29.0189 19.1824 28.1764 21.018C29.0185 19.1824 29.4882 17.1418 29.4882 14.9935Z"
+          fill="url(#paint0_linear)"
+          />
+        
+          <path
+          d="M12.9841 11.8563L12.9841 11.8563L12.9837 11.857C12.8983 12.0284 12.6415 12.5063 12.2127 13.2915L12.2037 13.308L12.2141 13.3237C12.3005 13.4537 12.4002 13.5889 12.5132 13.7293C12.6258 13.8692 12.7464 14.0171 12.8751 14.1731C13.0041 14.3295 13.1438 14.4886 13.2942 14.6503C13.4443 14.8116 13.6024 14.981 13.7685 15.1585C13.9348 15.3361 14.1092 15.5165 14.2916 15.6995C15.235 16.6462 16.0187 17.3464 16.6422 17.7995L16.6587 17.8115L16.6763 17.8011C17.373 17.3925 17.849 17.1242 18.1051 16.9957L18.1051 16.9957L18.1064 16.995C18.3708 16.8464 18.6227 16.7732 18.8627 16.7732C19.0508 16.7732 19.211 16.8151 19.3445 16.8976L19.3447 16.8977C20.2975 17.4777 21.3789 18.1975 22.5891 19.0572C22.7965 19.224 22.921 19.4423 22.9627 19.7138C22.9936 19.9946 22.9059 20.2989 22.6943 20.628C22.6095 20.7557 22.4444 20.9696 22.198 21.2705L22.1978 21.2707C21.9741 21.5487 21.635 21.9024 21.18 22.3321C20.9533 22.5462 20.7483 22.7058 20.565 22.8116C20.3814 22.9177 20.2214 22.9688 20.0843 22.9688H20.0528C18.9563 22.9259 17.7348 22.4931 16.3875 21.6669C15.0401 20.8407 13.5632 19.6274 11.9569 18.0263C8.75367 14.8014 7.11676 12.094 7.03125 9.90263C7.0314 9.765 7.08238 9.60259 7.18799 9.41449C7.29359 9.2264 7.45267 9.01466 7.66601 8.77917C8.08334 8.32821 8.43031 7.99086 8.70717 7.76645C8.98546 7.55165 9.2099 7.38544 9.38063 7.26766L9.38064 7.26766L9.38109 7.26734C9.60037 7.11017 9.85642 7.03125 10.1505 7.03125C10.4846 7.03125 10.7429 7.15111 10.9293 7.38978C11.5394 8.22758 12.2568 9.30195 13.0815 10.6131C13.2771 10.944 13.2492 11.3562 12.9841 11.8563ZM9.36289 7.24194C9.58793 7.08065 9.85047 7 10.1505 7C10.4934 7 10.7613 7.12366 10.9542 7.37097C11.565 8.20968 12.283 9.28495 13.1082 10.5968L9.36289 7.24194ZM9.90811 8.00628L9.9081 8.00627L21.9167 20.0645L21.9418 20.0832C21.9418 20.0832 21.9419 20.0831 21.9419 20.083C21.9755 20.0381 21.999 19.9944 22.0111 19.9521C22.0233 19.9094 22.0237 19.8679 22.0107 19.8289L22.0074 19.819L21.9989 19.8131C20.7664 18.9527 19.7265 18.2535 18.8794 17.7156L18.8718 17.7107H18.8627C18.7698 17.7107 18.6575 17.7454 18.5272 17.8108C18.4833 17.8328 18.3108 17.9302 18.0113 18.1019C17.7116 18.2738 17.4173 18.4349 17.1283 18.5852L17.1283 18.5851L17.1265 18.5862L16.6131 18.8984L16.0995 18.5549C16.0995 18.5548 16.0994 18.5548 16.0994 18.5548C15.4268 18.0941 14.598 17.3593 13.6127 16.3491L13.6126 16.349C12.6487 15.3711 11.9268 14.5392 11.446 13.853L11.446 13.853L11.4451 13.8519L11.072 13.3684L11.3832 12.8219L11.3835 12.8215C11.7799 12.1011 12.0371 11.6333 12.155 11.4182L12.1551 11.4183L12.1556 11.4172C12.2208 11.2864 12.2553 11.1737 12.2553 11.0806V11.0717L12.2505 11.064C11.8861 10.4832 11.5323 9.93196 11.1893 9.41025C10.8463 8.88859 10.5193 8.40184 10.2084 7.95003L10.1991 7.93649H10.1827H10.1505C10.0593 7.93649 9.9781 7.95947 9.90811 8.00628Z"
+          fill="white"
+          />
+          <path
+          d="M12.9841 11.8563L12.9841 11.8563L12.9837 11.857C12.8983 12.0284 12.6415 12.5063 12.2127 13.2915L12.2037 13.308L12.2141 13.3237C12.3005 13.4537 12.4002 13.5889 12.5132 13.7293C12.6258 13.8692 12.7464 14.0171 12.8751 14.1731C13.0041 14.3295 13.1438 14.4886 13.2942 14.6503C13.4443 14.8116 13.6024 14.981 13.7685 15.1585C13.9348 15.3361 14.1092 15.5165 14.2916 15.6995C15.235 16.6462 16.0187 17.3464 16.6422 17.7995L16.6587 17.8115L16.6763 17.8011C17.373 17.3925 17.849 17.1242 18.1051 16.9957L18.1051 16.9957L18.1064 16.995C18.3708 16.8464 18.6227 16.7732 18.8627 16.7732C19.0508 16.7732 19.211 16.8151 19.3445 16.8976L19.3447 16.8977C20.2975 17.4777 21.3789 18.1975 22.5891 19.0572C22.7965 19.224 22.921 19.4423 22.9627 19.7138C22.9936 19.9946 22.9059 20.2989 22.6943 20.628C22.6095 20.7557 22.4444 20.9696 22.198 21.2705L22.1978 21.2707C21.9741 21.5487 21.635 21.9024 21.18 22.3321C20.9533 22.5462 20.7483 22.7058 20.565 22.8116C20.3814 22.9177 20.2214 22.9688 20.0843 22.9688H20.0528C18.9563 22.9259 17.7348 22.4931 16.3875 21.6669C15.0401 20.8407 13.5632 19.6274 11.9569 18.0263C8.75367 14.8014 7.11676 12.094 7.03125 9.90263C7.0314 9.765 7.08238 9.60259 7.18799 9.41449C7.29359 9.2264 7.45267 9.01466 7.66601 8.77917C8.08334 8.32821 8.43031 7.99086 8.70717 7.76645C8.98546 7.55165 9.2099 7.38544 9.38063 7.26766L9.38064 7.26766L9.38109 7.26734C9.60037 7.11017 9.85642 7.03125 10.1505 7.03125C10.4846 7.03125 10.7429 7.15111 10.9293 7.38978C11.5394 8.22758 12.2568 9.30195 13.0815 10.6131C13.2771 10.944 13.2492 11.3562 12.9841 11.8563ZM9.36289 7.24194C9.58793 7.08065 9.85047 7 10.1505 7C10.4934 7 10.7613 7.12366 10.9542 7.37097C11.565 8.20968 12.283 9.28495 13.1082 10.5968L9.36289 7.24194ZM9.90811 8.00628L9.9081 8.00627L21.9167 20.0645L21.9418 20.0832C21.9418 20.0832 21.9419 20.0831 21.9419 20.083C21.9755 20.0381 21.999 19.9944 22.0111 19.9521C22.0233 19.9094 22.0237 19.8679 22.0107 19.8289L22.0074 19.819L21.9989 19.8131C20.7664 18.9527 19.7265 18.2535 18.8794 17.7156L18.8718 17.7107H18.8627C18.7698 17.7107 18.6575 17.7454 18.5272 17.8108C18.4833 17.8328 18.3108 17.9302 18.0113 18.1019C17.7116 18.2738 17.4173 18.4349 17.1283 18.5852L17.1283 18.5851L17.1265 18.5862L16.6131 18.8984L16.0995 18.5549C16.0995 18.5548 16.0994 18.5548 16.0994 18.5548C15.4268 18.0941 14.598 17.3593 13.6127 16.3491L13.6126 16.349C12.6487 15.3711 11.9268 14.5392 11.446 13.853L11.446 13.853L11.4451 13.8519L11.072 13.3684L11.3832 12.8219L11.3835 12.8215C11.7799 12.1011 12.0371 11.6333 12.155 11.4182L12.1551 11.4183L12.1556 11.4172C12.2208 11.2864 12.2553 11.1737 12.2553 11.0806V11.0717L12.2505 11.064C11.8861 10.4832 11.5323 9.93196 11.1893 9.41025C10.8463 8.88859 10.5193 8.40184 10.2084 7.95003L10.1991 7.93649H10.1827H10.1505C10.0593 7.93649 9.9781 7.95947 9.90811 8.00628Z"
+          fill="url(#paint2_linear)"
+          />
+        
+          <linearGradient
+          id="paint0_linear"
+          x1="14.9944"
+          y1="0"
+          x2="14.9944"
+          y2="29.9869"
+          gradientUnits="userSpaceOnUse"
+          >
+          <stop stop-color="white" />
+          <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+          />
+          </linearGradient>
+          <linearGradient
+          id="paint1_linear"
+          x1="14.9944"
+          y1="0"
+          x2="14.9944"
+          y2="29.9869"
+          gradientUnits="userSpaceOnUse"
+          >
+          <stop stop-color="white" />
+          <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+          />
+          </linearGradient>
+          <linearGradient
+          id="paint2_linear"
+          x1="15"
+          y1="7"
+          x2="15"
+          y2="23"
+          gradientUnits="userSpaceOnUse"
+          >
+          <stop stop-color="white" />
+          <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+          />
+          </linearGradient>
+          <linearGradient
+          id="paint3_linear"
+          x1="15"
+          y1="7"
+          x2="15"
+          y2="23"
+          gradientUnits="userSpaceOnUse"
+          >
+          <stop stop-color="white" />
+          <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+          />
+          </linearGradient>
+          </defs>
+          </svg>
           </div>
-          <a href="#" class="ba-info-desc">
+          <p class="ba-info-desc">
           +380669876543
-          </a>
+          </p>
           <!-- /.ba-svg-info -->
           </div>
           <div class="ba-info-block">
@@ -706,9 +581,9 @@
 </svg>
 
           </div>
-          <a href="#" class="ba-info-desc">
+          <p class="ba-info-desc">
           rkphotography@gmail.com
-          </a>
+          </p>
           <!-- /.ba-svg-info -->
           </div>
           <div class="ba-info-block">
@@ -760,28 +635,15 @@
           </defs>
           </svg>
           </div>
-          <a href="#" class="ba-info-desc">
+          <p class="ba-info-desc">
           Полтава вул.Небесної Сотні 32
-          </a>
+          </p>
           <!-- /.ba-svg-info -->
           </div>
           </div>
-           <div class="ba-bullet ba-bullet--f ">
-             <button class="ba-button ba-button--lightm ba-button--vip">
-                  <span class="ba-btn-content">Запитання і відповіді</span>
-                </button>
-            </div>
-           </div>
+          </div>
           <!-- /.ba-info-box -->
           <!-- /.ba-logo -->
-           <div class="ba-bullet ba-bullet--f ">
-             <button class="ba-button ba-button--lightm ba-button--vip ba-btn-rotate">
-                  <span class="ba-btn-content ba-btn-content--arrow"><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="ba-svg-rotate">
-<path d="M5.00014 0.0468867L4.64014 0.390387L0.390137 4.64039L1.11014 5.36039L4.50014 1.96789V11.9999H5.50014V1.96839L8.89014 5.35939L9.61014 4.63939L5.36014 0.389387L5.00014 0.0463867V0.0468867Z" fill="#1B1B1B"/>
-</svg>
-</span>
-                </button>
-            </div>
           </div>
           <!-- /.ba-flex-con -->
           </div>
@@ -792,7 +654,5 @@
 
       </footer>
       <!-- /.ba-footer -->
-    </main>
-    <script src="js/main.js"></script>
   </body>
 </html>

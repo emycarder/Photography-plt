@@ -92,6 +92,31 @@ p {
   }
 }
 */
+
+.ba-c-active {
+  &::after {
+    content: "";
+    height: 4px;
+    margin: 0 auto;
+    width: 4px;
+    display: block;
+    border-radius: 50px;
+    background-color: $primary-color;
+  }
+}
+
+.ba-b-active {
+  &::after {
+    content: "";
+    height: 4px;
+    margin: 0 auto;
+    width: 4px;
+    display: block;
+    border-radius: 50px;
+    background-color: $primary-color;
+  }
+}
+
 @import "section-intro-main";
 @import "header";
 @import "section-services-main";
@@ -99,3 +124,5 @@ p {
 @import "section-about-us";
 @import "footer";
 @import "prices-main";
+@import "gallery-doc";
+@import "price-doc";

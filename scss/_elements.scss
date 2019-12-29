@@ -28,7 +28,10 @@ select {
   height: 45px;
   line-height: 45px;
   padding-left: 20px;
+}
 
+.ba-email {
+  border: none;
   border-style: none;
 }
 
@@ -55,6 +58,20 @@ textarea {
   border: 1px solid #fff;
   border-radius: 34px;
   padding: 2px;
+  .ba-btn-content {
+    display: inline-block;
+    background: #fff;
+    color: $primary-color;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 0 66px;
+    transition: background 0.3s;
+    &:focus {
+      color: #fff;
+      background-color: $primary-color;
+      transition: all 0.3s ease;
+    }
+  }
   &:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease;
@@ -67,20 +84,6 @@ textarea {
     & > span {
       background-color: #000;
       color: #fff;
-      transition: all 0.3s ease;
-    }
-  }
-  .ba-btn-content {
-    display: inline-block;
-    background: #fff;
-    color: $primary-color;
-    display: inline-block;
-    border-radius: 34px;
-    padding: 0 66px;
-    transition: background 0.3s;
-    &:focus {
-      color: #fff;
-      background-color: $primary-color;
       transition: all 0.3s ease;
     }
   }
@@ -103,6 +106,8 @@ textarea {
   border-radius: 34px;
   border: none;
   padding: 0 15px;
+  position: relative;
+  right: 5px;
 }
 
 .ba-button--dark {
@@ -141,9 +146,46 @@ textarea {
 
 .ba-button--large {
   outline: none;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  @media (min-width: $large) {
+    display: inline-block;
+  }
+}
 
-  @media screen and(max-width: $medium) {
-    font-size: 14px;
-    padding: 0 60px;
+.ba-button--lightm {
+  border: 1px solid #fff;
+  border-radius: 34px;
+  padding: 2px;
+  .ba-btn-content {
+    display: inline-block;
+    background: #fff;
+    color: $primary-color;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 0 19px;
+
+    transition: background 0.3s;
+    &:focus {
+      color: #fff;
+      background-color: $primary-color;
+      transition: all 0.3s ease;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+  }
+  &:focus {
+    border-color: #000;
+    color: #fff;
+    transition: all 0.3s ease;
+
+    & > span {
+      background-color: #000;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
   }
 }

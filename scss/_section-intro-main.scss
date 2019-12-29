@@ -6,12 +6,27 @@
   height: 100%;
   padding-top: 127px;
   padding-bottom: 15px;
+  @media (max-width: 640px) {
+    background: url(../img/jonathan-borba-hdgHkndutgw-unsplash1.jpg) 50%,
+      no-repeat;
+  }
   @media screen and(max-width: $medium) {
     padding-top: 85px;
     padding-bottom: 50px;
   }
 
-  h1 {
+  .ba-button {
+    display: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    @media (min-width: $large) {
+      display: inline-block;
+    }
+  }
+
+  .ba-title-first {
     margin: 0 auto;
     text-align: center;
     font-size: 24px;
@@ -69,6 +84,9 @@
       transition: all 0.3s ease;
     }
   }
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
 
 .ba-column {
@@ -94,4 +112,7 @@
 .ba-scroll-flex {
   display: flex;
   justify-content: center;
+  @media (max-width: 640px) {
+    display: none;
+  }
 }

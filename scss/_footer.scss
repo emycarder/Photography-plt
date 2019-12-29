@@ -1,5 +1,5 @@
 .ba-footer {
-  padding: 100px 0;
+  padding: 80px 10px;
   background: url(../img/foto-pettine-IfjHaIoAoqE-unsplash.jpg);
 
   background-size: cover;
@@ -22,11 +22,16 @@
   display: flex;
   flex-direction: row;
   a + a {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   a {
     display: block;
     margin-bottom: 15px;
+  }
+  @media (max-width: 640px) {
+    a + a {
+      margin-left: 35px;
+    }
   }
 }
 
@@ -38,7 +43,9 @@
   &__input {
     flex-grow: 1;
   }
-
+  @media (max-width: 640px) {
+    min-width: 304px;
+  }
   &:active {
     outline: none;
     border-style: none;
@@ -50,6 +57,11 @@
   }
 }
 .ba-form-box {
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   p {
     margin-bottom: 0;
   }
@@ -59,18 +71,76 @@
   display: flex;
 
   justify-content: space-between;
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .ba-info-block {
+  a {
+    color: #fff;
+    line-height: 2;
+    margin: 0 5px;
+  }
   display: flex;
+
+  .ba-svg-no-border {
+    border: none;
+  }
   svg {
     border: 1px solid #fff;
     border-radius: 50%;
   }
+}
+.ba-svg-no-border {
+  border: none;
 }
 
 .ba-flex-con {
   display: flex;
   align-items: center;
   flex-direction: row;
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.ba-email__input {
+  border-style: none;
+}
+.ba-info-box {
+  margin-bottom: 10px;
+}
+
+.ba-box-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.ba-bullet {
+  &--f {
+    margin-left: 20px;
+  }
+}
+
+.ba-btn-rotate {
+  transform: rotate(90deg);
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+.ba-svg-rotate {
+  transform: rotate(-90deg);
+}
+
+.ba-btn-content--arrow {
+}
+.ba-logo--footer {
+  @media (min-width: 1024px) {
+    position: relative;
+
+    bottom: 32px;
+    margin: 35px;
+  }
 }

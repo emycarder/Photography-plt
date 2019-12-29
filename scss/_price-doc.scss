@@ -1,0 +1,73 @@
+.ba-frame {
+  background-color: #fff;
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.07);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 34px 68px 34px 127px;
+  margin-bottom: 67px;
+}
+
+.ba-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ba-16px {
+  font-size: 16px;
+}
+
+.ba-flex-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.ba-f-none {
+}
+
+.ba-f-center {
+}
+
+.ba-input-contact {
+  margin-bottom: 25px;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.ba-input-email {
+  margin-bottom: 25px;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.ba-input-textarea {
+  overflow: hidden;
+  height: auto;
+  resize: none;
+  margin-bottom: 25px;
+  max-width: 400px;
+  outline: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.ba-title-second-m {
+  text-align: center;
+  @media (max-width: 640px) {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.ba-price-flex {
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+  }
+}
